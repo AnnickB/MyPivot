@@ -86,7 +86,8 @@ rpivotTable <- function(
     inclusions = NULL,
     ...,
     width = NULL,
-    height = NULL
+    height = NULL,
+    interval_heatmap #add by ABI on 4/11
 ) {
   # check for data.frame, data.table, or array
   if( length(intersect(class(data),c("data.frame", "data.table", "table","structable", "ftable" ))) == 0 ) {
