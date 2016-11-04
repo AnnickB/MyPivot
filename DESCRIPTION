@@ -1,0 +1,13 @@
+Package: Pivot
+Type: Package
+Title: Pivot Table and features
+Version: 0.1
+Date: 2016-11-04
+Author: person("Annick", "Biver", role = c("aut"), comment = "pivottable library")
+Maintainer: Annick Biver <annick.biver@hotmail.com>
+Description: Build powerful pivot tables (aka Pivot Grid, Pivot Chart, Cross-
+    Tab) and dynamically slice & dice / drag 'n' drop your data. 'rpivotTable' is a
+    wrapper of 'pivottable', a powerful open-source Pivot Table library implemented
+    in 'JavaScript' by Nicolas Kruchten. Aligned to 'pivottable' v1.6.3.
+License: MIT + file LICENSE
+LazyData: TRUE
