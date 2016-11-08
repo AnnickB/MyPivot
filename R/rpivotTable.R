@@ -91,6 +91,7 @@ rpivotTable <- function(
     interval2_heatmap,
     interval3_heatmap,
     interval4_heatmap,
+    Order_Modalities,
     number
 ) {
 
