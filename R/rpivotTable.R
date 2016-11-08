@@ -87,8 +87,21 @@ rpivotTable <- function(
     ...,
     width = NULL,
     height = NULL,
-    interval_heatmap #add by ABI on 4/11
+    interval1_heatmap, #add by ABI on 4/11
+    interval2_heatmap,
+    interval3_heatmap,
+    interval4_heatmap,
+    number
 ) {
+
+  #if it is the first time the function runs since the button is clicked: default of the options=NULL in order to load
+  #the table, but once the button is clicked, when the interval is changed, one wants that the table properties chosen
+  #by the user remain the same.
+#   if (rows!=NULL && cols!=NULL && aggregatorName!=NULL){
+#
+#   }
+
+
   # check for data.frame, data.table, or array
   if( length(intersect(class(data),c("data.frame", "data.table", "table","structable", "ftable" ))) == 0 ) {
     stop( "data should be a data.frame, data.table, or table", call.=F)

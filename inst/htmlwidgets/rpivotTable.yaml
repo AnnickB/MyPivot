@@ -1,0 +1,43 @@
+dependencies:
+- name: jquery
+  version: 1.11.0
+  src: htmlwidgets/lib/jquery-1.11.0
+  script: jquery.min.js
+- name: jquery-ui
+  version: 1.10.4
+  src: htmlwidgets/lib/jqueryui-1.10.4
+  script:
+  - jquery-ui.min.js
+  - jquery.ui.touch-punch.min.js
+  stylesheet: jquery-ui.min.css
+- name: c3
+  version: 0.4.10
+  src: htmlwidgets/lib/c3
+  script: c3.min.js
+  stylesheet: c3.min.css
+- name: d3
+  version: 3.5.5
+  src: htmlwidgets/lib/d3
+  script: d3.v3.min.js
+- name: pivottable
+  version: 1.6.3
+  src: htmlwidgets/lib/pivottable/dist
+  stylesheet: pivot.min.css
+  script: pivot.min.js
+- name: pivottable_d3renderers
+  version: 1.6.3
+  src: htmlwidgets/lib/pivottable/dist
+  script: d3_renderers.min.js
+- name: pivottable_c3renderers
+  version: 1.6.3
+  src: htmlwidgets/lib/pivottable/dist
+  script: c3_renderers.min.js
+- name: polyfill
+  version: 0.1
+  src: htmlwidgets/lib/polyfill
+  script: polyfill.min.js
+- name: rpivotTable_style
+  version: 0.1
+  src: htmlwidgets/lib
+  stylesheet: rpivotTable.css
+  #
