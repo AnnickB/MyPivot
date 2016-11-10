@@ -85,23 +85,15 @@ rpivotTable <- function(
     exclusions = NULL,
     inclusions = NULL,
     ...,
-    width = NULL,
-    height = NULL,
+    width  = NULL,
+    height  = NULL,
     interval1_heatmap, #add by ABI on 4/11
     interval2_heatmap,
     interval3_heatmap,
-    interval4_heatmap,
-    Order_Modalities,
-    number
+    interval4_heatmap
+    #Order_Modalities,
+    #number
 ) {
-
-  #if it is the first time the function runs since the button is clicked: default of the options=NULL in order to load
-  #the table, but once the button is clicked, when the interval is changed, one wants that the table properties chosen
-  #by the user remain the same.
-#   if (rows!=NULL && cols!=NULL && aggregatorName!=NULL){
-#
-#   }
-
 
   # check for data.frame, data.table, or array
   if( length(intersect(class(data),c("data.frame", "data.table", "table","structable", "ftable" ))) == 0 ) {
@@ -131,29 +123,25 @@ rpivotTable <- function(
       , params
     )
     # exlusions & inclusions need to be "excluded" from auto_boxing
-  par <- list(
-           exclusions = exclusions,
-           inclusions = inclusions
-         )
+    par <- list(exclusions = exclusions,
+                inclusions = inclusions)
 
-params <- c(params, par)
+    params <- c(params, par)
 
     # remove NULL parameters
     params <- Filter(Negate(is.null), params)
 
-    x <- list(
-      data = data,
-      params = params
-    )
+    x <- list(data = data,
+              params = params)
 
-    htmlwidgets::createWidget(
-      name = 'rpivotTable',
-      x,
-      width = width,
-      height = height,
-      package='Pivot' #package = 'rpivotTable'
+    htmlwidgets::createWidget(name = 'rpivotTable',
+                              x,
+                              width = width,
+                              height = height,
+                              package='Pivot'
     )
 }
+
 
 #' Widget output function for use in Shiny
 #'
