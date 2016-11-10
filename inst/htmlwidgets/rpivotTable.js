@@ -12,7 +12,7 @@ HTMLWidgets.widget({
 
     renderValue: function(el, x, instance) {
 
-	    x.Order_Modalities = HTMLWidgets.dataframeToD3(x.Order_Modalities);
+	    /*x.Order_Modalities = HTMLWidgets.dataframeToD3(x.Order_Modalities);*/
 
 	    x.data = HTMLWidgets.dataframeToD3(x.data);
 

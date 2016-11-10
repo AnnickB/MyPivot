@@ -99,3 +99,8 @@ table.pvtTable tr td{
 }
 .pvtCheckContainer p{margin:5px}
 .pvtRendererArea{padding:5px}
+
+/*add by ABI on 10/11 ==============
+==== Hide Totals in Pivot Table ====
+*/
+.pvtTotal, .pvtTotalLabel, .pvtGrandTotal {display: none}
