@@ -1,4 +1,4 @@
-.pvtUi{color:#333}
+.pvtUi{color:#333} /*black*/
 
 table.pvtTable{
   font-size:8pt;
@@ -7,8 +7,8 @@ table.pvtTable{
 
 }
 table.pvtTable tr th{
-  background-color:#e6EEEE;
-  border:1px solid #CDCDCD;
+  background-color:#e6EEEE; /*(grey-blue light)*/
+  border:1px solid #CDCDCD; /*grey*/
   font-size:8pt;
   padding:5px
 
@@ -24,8 +24,8 @@ table.pvtTable .pvtTotalLabel{
 table.pvtTable tr td{
   color:#3D3D3D;
   padding:5px;
-  background-color:#FFF;
-  border:1px solid #CDCDCD;
+  background-color:#FFF; /*black*/
+  border:1px solid #CDCDCD; /*grey*/
   vertical-align:top
   ;text-align:right
 }
@@ -43,7 +43,7 @@ table.pvtTable tr td{
 }
 .pvtAxisContainer,.pvtVals{
   border:1px solid gray;
-  background:#EEE;
+  background:#EEE; /*light grey*/
   padding:5px;
   min-width:20px;
   min-height:20px
@@ -60,12 +60,12 @@ table.pvtTable tr td{
   padding:3px 15px;
   -moz-border-radius:5px;
   border-radius:5px;
-  border:1px dashed #aaa
+  border:1px dashed #aaa /*middle grey*/
 
 }
 .pvtAxisContainer li span.pvtAttr{
-  background:#F3F3F3;
-  border:1px solid #DEDEDE;
+  background:#F3F3F3; /*very light grey*/
+  border:1px solid #DEDEDE; /*middle grey*/
   padding:2px 5px;
   white-space:nowrap;
   -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px
