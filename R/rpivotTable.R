@@ -90,9 +90,12 @@ rpivotTable <- function(
     interval1_heatmap, #add by ABI on 4/11
     interval2_heatmap,
     interval3_heatmap,
-    interval4_heatmap
-    #Order_Modalities,
-    #number
+    interval4_heatmap,
+    colour1_heatmap,
+    colour2_heatmap,
+    colour3_heatmap,
+    colour4_heatmap,
+    colour5_heatmap
 ) {
 
   # check for data.frame, data.table, or array
