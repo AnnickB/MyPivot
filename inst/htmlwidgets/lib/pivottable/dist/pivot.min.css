@@ -1,93 +1,138 @@
-.pvtUi{color:#333} /*black*/
+.pvtUi{
+  color: #d9230f
+  /*background-color: #F3F3F3*/
+}
 
 table.pvtTable{
   font-size:8pt;
   text-align:left;
-  border-collapse:collapse
-
+  border-collapse:collapse;
 }
 table.pvtTable tr th{
-  background-color:#e6EEEE; /*(grey-blue light)*/
-  border:1px solid #CDCDCD; /*grey*/
+  background-color: #fff; /*#e6EEEE; (grey-blue light)*/
+  border:1px solid #EDEDED; /*grey*/
+  color: #3D3D3D;
   font-size:8pt;
-  padding:5px
-
+  padding:5px;
 }
+
+th{
+  background-color: #B3B3B3;
+  color:#F3F3F3
+}
+
+table.pvtTable .pvtRowLabel{
+  text-align:center
+  border-right-style:solid;
+  border-right-color:#333;
+  color:#FFF;
+  background-color:#B3B3B3;
+}
+
 table.pvtTable .pvtColLabel{
   text-align:center
-
+  border-bottom-style:solid;
+  border-bottom-color:#333;
+  color:#FFF;
+  background-color:#B3B3B3;
 }
+
 table.pvtTable .pvtTotalLabel{
   text-align:right
-
 }
+
 table.pvtTable tr td{
   color:#3D3D3D;
   padding:5px;
-  background-color:#FFF; /*black*/
-  border:1px solid #CDCDCD; /*grey*/
-  vertical-align:top
-  ;text-align:right
+  background-color:#FFF; /*white*/
+  border:1px solid #EDEDED; /*grey*/
+  vertical-align:top;
+  text-align:right
 }
+
+
 .pvtGrandTotal,.pvtTotal{
   font-weight:700
-
 }
+
 .pvtVals{
   text-align:center
-
 }
+
 .pvtAggregator{
-  margin-bottom:5px
-
+  margin-bottom:5px;
+  background: #d9230f;
+  color:#FFF
 }
-.pvtAxisContainer,.pvtVals{
-  border:1px solid gray;
-  background:#EEE; /*light grey*/
+
+.pvtVals{
+  border:1px solid #CDCDCD; /*solid gray;*/
   padding:5px;
   min-width:20px;
-  min-height:20px
-
+  min-height:20px;
+  background: #FFF
 }
+
+.pvtAxisContainer{
+  border:1px solid #CDCDCD; /*solid gray;*/
+  padding:5px;
+  min-width:20px;
+  min-height:20px;
+  background: #F3F3F3
+}
+
 .pvtAxisContainer li{
   padding:8px 6px;
   list-style-type:none;
-  cursor:move
-
+  cursor:move;
 }
+
 .pvtAxisContainer li.pvtPlaceholder{
   -webkit-border-radius:5px;
   padding:3px 15px;
   -moz-border-radius:5px;
   border-radius:5px;
-  border:1px dashed #aaa /*middle grey*/
-
+  border:1px dashed #d9230f /*#aaa middle grey*/
 }
+
 .pvtAxisContainer li span.pvtAttr{
-  background:#F3F3F3; /*very light grey*/
-  border:1px solid #DEDEDE; /*middle grey*/
+  background: #F3F3F3; very light grey*/
+  border:1px solid #d9230f; /*#DEDEDE; middle grey*/
+  color:#d9230f;
   padding:2px 5px;
   white-space:nowrap;
   -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px
 }
-.pvtTriangle{
-  cursor:pointer;color:grey
 
-}.pvtHorizList li{
+.pvtTriangle{
+  cursor:pointer;color:#d9230f
+}
+
+.pvtHorizList li{
   display:inline
 }
-.pvtVertList{vertical-align:top}
-.pvtFilteredAttribute{font-style:italic}
+
+.pvtVertList{
+  vertical-align:top
+}
+
+.pvtFilteredAttribute{
+  font-style:italic
+  background: #F3F3F3;
+  color:#d9230f
+}
+
 .pvtFilterBox{
   z-index:100;
   width:280px;
   border:1px solid gray;
-  background-color:#fff;
   position:absolute;
   padding:20px;
-  text-align:center
+  text-align:center;
+  background: #F3F3F3;
+  color:#d9230f
 }
-.pvtFilterBox h4{margin:0}
+.pvtFilterBox h5{margin:0}
 .pvtFilterBox p{margin:1em auto}
 .pvtFilterBox label{font-weight:400}
 .pvtFilterBox input[type=checkbox]{margin-right:5px}
@@ -98,7 +143,11 @@ table.pvtTable tr td{
   max-height:200px
 }
 .pvtCheckContainer p{margin:5px}
-.pvtRendererArea{padding:5px}
+.pvtRendererArea{
+  padding:5px;
+  background: #F3F3F3;
+  color:#d9230f
+}
 
 /*add by ABI on 10/11 ==============
 ==== Hide Totals in Pivot Table ====

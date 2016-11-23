@@ -1,7 +1,7 @@
 .table {font-family: Helvetica;}
-.node  {
+ .node  {
     border: solid 1px white;
-    font: 9px tahoma;
+    font: 9px verdana;
     line-height: 10px;
     overflow: hidden;
     text-indent: 2px;
@@ -13,6 +13,8 @@
  .tick line {stroke: white;}
  .c3-axis path {stroke: red;}
  .c3-circle { opacity: 1 ! important;}
- .pvtRows, .pvtCols {background: #FFFFFF none repeat scroll 0 0;}
+ .pvtRows, .pvtCols {
+   background: #F3F3F3 /*#FFFFFF*/ none repeat scroll 0 0;
+ }
  .pvtFilteredAttribute { font-weight: bold;}
 
